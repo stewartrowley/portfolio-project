@@ -1,85 +1,101 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import "../src/assets/styles.scss";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHome, faAddressCard, faBriefcase, faAddressBook, faImage, faUser } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faHome, faAddressCard, faBriefcase, faAddressBook, faImage, faUser);
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+    <div class="header-nav-container">
+      <img class="nav-img"
+          src="./assets/images/logo/bio-logos/Bio-logos_transparent.png"
+        />
+      <nav class="nav-bar-container">
+        <div class="nav-link-div">
+          <!-- <img
+            src="./assets/images/icons-color/icons8-home-windows-11-color/icons8-home-24.png"
+          /> -->
+          <font-awesome-icon icon="fa-home" />
+          <RouterLink class="nav-link" to="/">Home</RouterLink>
+        </div>
+        <div class="nav-link-div">
+          <font-awesome-icon icon="fa-address-card" />
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
+        </div>
+        <div class="nav-link-div">
+          <font-awesome-icon icon="fa-briefcase" />
+          <RouterLink class="nav-link" to="/work-experience">Work-Experience</RouterLink>
+        </div>
+        <div class="nav-link-div">
+          <font-awesome-icon icon="fa-address-book" />
+          <RouterLink class="nav-link" to="/contact-me">Contact-Me</RouterLink>
+        </div>
+        <div class="nav-link-div">
+          <font-awesome-icon icon="fa-image" />
+          <RouterLink class="nav-link" to="/gallery">Gallery</RouterLink>
+        </div>
       </nav>
     </div>
+    <font-awesome-icon class="user-image" icon="fa-user" />
   </header>
 
   <RouterView />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  background-color: var(--space-cadet);
+  width: auto;
+  height: auto;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 1em;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.nav-link-div {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: var(--timberwolf);
 }
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+.nav-link {
+  color: var(--timberwolf);
+  text-decoration: none;
+  &:active {
+    color: var(--timberwolf)
   }
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+  padding: 0 0.25rem;
+}
+.nav-img{
+  width: 8%;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.header-nav-container {
+  display: flex;
+  flex-direction: row;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.user-image {
+  color: var(--timberwolf);
+  padding-right: 3rem;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
