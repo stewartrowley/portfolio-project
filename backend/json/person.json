@@ -1,14 +1,8 @@
-{"_id":{"$oid":"6338e44d14f975e4bddcb55a"},
+{
   "name": "Stewart Rowley",
   "career": "Web Development",
   "degree": "Software Engineering",
-  "location": "Walla, Walla",
-  "family_life": [{}],
-  "interest": [{}],
-  "hobbies": [{
-    "title": "Board Games",
-    "description": ""
-  }],
-  "images": [{}],
-  "gallery-images": []
+  "location": "Walla, Walla"
 }
+
+

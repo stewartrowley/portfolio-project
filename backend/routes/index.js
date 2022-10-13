@@ -1,8 +1,11 @@
-const express = require('express');
-const router = express.Router();
+const routes = require('express').Router();
+const person = require('./person');
 
-router.get('/', (req, res) => {
-    res.send("Stewart Rowley")
-})
+routes.use('/', require('./swagger'));
+routes.use('/person', person);
 
-module.exports = router
+routes.get('/', (req, res) => {
+  res.send('Stewart Rowley');
+});
+
+module.exports = routes;
