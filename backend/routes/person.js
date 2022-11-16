@@ -3,7 +3,7 @@ const person = require('../controller/person');
 
 routes.post('/', person.create)
 routes.get('/', person.findAll);
-routes.get('/:person_id', person.findOne);
+routes.get('/:_id', person.findOne);
 
 
 module.exports = routes;
