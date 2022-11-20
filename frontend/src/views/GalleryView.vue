@@ -1,29 +1,40 @@
 <template lang="">
-    <div>
-        <h1>{{ this.aboutData.firstName + ' ' + this.aboutData.lastName }}</h1>
-        <img :src="this.aboutData.gallery.images" >
-    </div>
+    <GalleryMaker/>
 </template>
 <script>
-import AboutServices from '../services/AboutServices';
+import GalleryServices from '../services/GalleryServices';
+import GalleryMaker from '../components/GalleryMaker.vue';
+import { useImageStore } from '../stores/ImageStore'
+import { convertToList } from '../functions/functions.js'
 export default {
   data() {
     return {
-      aboutData: ''
+      galleryData: ''
     };
   },
   created() {
-    AboutServices.getAbout()
+    GalleryServices.getGallery()
       .then((response) => {
         console.log(response.data);
-        this.aboutData = response.data;
+        this.galleryData = response.data;
+        const setupImages = convertToList(this.galleryData);
+        this.imageStore.imageData = setupImages;
       })
       .catch((error) => {
         console.log(error);
       });
+  },
+  components: {
+    GalleryMaker
+  },
+  setup() {
+    const imageStore = useImageStore();
+    return {
+      imageStore,
+    }
   }
 };
 </script>
-<style lang="">
-    
+<style lang="scss">
+
 </style>

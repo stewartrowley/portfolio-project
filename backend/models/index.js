@@ -9,6 +9,7 @@ db.url = dbConfig.url;
 db.person = require('./person.js')(mongoose);
 db.about = require('./about.js')(mongoose);
 db.employment = require('./employment.js')(mongoose);
+db.gallery = require('./gallery.js')(mongoose)
 
 
 module.exports = db;
