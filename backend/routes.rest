@@ -43,16 +43,19 @@ Content-Type: application/json
   "interest": [
     {
       "name": "Movies",
+      "icon": ""
       "description": "These are some of the following favorite movies I like, as follows:",
       "titles": ["How to Train Your Dragon", "Star Wars: Return of the Jedi", "Shang Chi"]
     },
     {
       "name": "Board Games",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-board-game-64.png",
       "description": "I have found board games to be one of my favorite things to do with others. Here are some of my favorite Board games, as follows: ",
       "titles": ["Scythe", "Pandemic", "Wingspan"]
     },
     {
       "name": "NHL Hockey",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-hockey-64.png"
       "description": "I love watching NHL hockey and I also love doing fantasy hockey. My most favorite team is the Seattle Kraken but I do love some other teams to. These are the teams as follows:",
       "titles": [
         "Buffalo Sabres",
