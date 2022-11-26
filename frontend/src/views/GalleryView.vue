@@ -1,11 +1,14 @@
 <template lang="">
+  <div class="gallery-background">
+    <h1 class="gallery-title">Gallery</h1>
     <GalleryMaker/>
+  </div>
 </template>
 <script>
 import GalleryServices from '../services/GalleryServices';
 import GalleryMaker from '../components/GalleryMaker.vue';
 import { useImageStore } from '../stores/ImageStore'
-import { convertToList } from '../functions/functions.js'
+import { convertToListVertical, convertToListHorizontal } from '../functions/functions.js'
 export default {
   data() {
     return {
@@ -15,10 +18,12 @@ export default {
   created() {
     GalleryServices.getGallery()
       .then((response) => {
-        console.log(response.data);
-        this.galleryData = response.data;
-        const setupImages = convertToList(this.galleryData);
-        this.imageStore.imageData = setupImages;
+        this.galleryData = response.data
+        const setupImagesVertical = convertToListVertical(this.galleryData);
+        console.log(setupImagesVertical)
+        this.imageStore.imageDataVertical = setupImagesVertical;
+        const setupImagesHorizontal = convertToListHorizontal(this.galleryData);
+        this.imageStore.imageDataHorizontal = setupImagesHorizontal;
       })
       .catch((error) => {
         console.log(error);
@@ -36,5 +41,14 @@ export default {
 };
 </script>
 <style lang="scss">
+  .gallery-background {
+    background-color: var(--black-coffee);
+  }
+  .gallery-title {
+    margin-top: 0;
+    padding-top: 1em;
+    text-align: center;
+    color: var(--timberwolf);
+  }
 
 </style>

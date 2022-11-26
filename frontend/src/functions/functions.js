@@ -1,13 +1,20 @@
-export const convertToList = (data) => {
+export const convertToListVertical = (data) => {
     let imageStructure = []
-    data.images_url.forEach(element => {
-        imageStructure.push({
-            largeURL: element,
-            thumbnailURL: element,
-            width: 853,
-            height: 1280
-        })
+    data.images_url[0].vertical_images.forEach((element) => {
+        imageStructure.push(element)
     });
+    return imageStructure;
+}
+
+export const convertToListHorizontal = (data) => {
+
+    let imageStructure = []
+    data.images_url[0].horizontal_images.forEach((element) => {
+
+        imageStructure.push(element)
+    })
+
     console.log(imageStructure)
+
     return imageStructure;
 }

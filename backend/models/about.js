@@ -10,6 +10,7 @@ module.exports = (mongoose) => {
                 degree: String,
                 location: String,
                 introduction: String,
+                profile_image: String,
                 interest: [mongoose.SchemaTypes.Mixed]
             },
             { timestamps: true }

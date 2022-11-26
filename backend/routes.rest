@@ -39,6 +39,7 @@ Content-Type: application/json
   "degree": "Software Engineering",
   "location": "Walla Walla, Washington",
   "introduction": "I was born in Walla Walla, Washington in 1998. The family I grew up in was 9 siblings including me. I had 4 brothers and 4 sisters. I am the third youngest in my famliy. I met my wife in Walla Walla Washington before I left for a 2 year mission for the church of Jesus Christ. I went on a mission for the church of Jesus Christ in Fort Woth, Texas. After my mission I got married to Emily Hepworth. I went to college at BYU-Idaho to get my Bachelors degree in Software Engineering. With an emphasis in the Web development. I have a passion for Web Development and love doing it. ",
+  "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg",
   "interest": [
     {
       "name": "Movies",
@@ -72,11 +73,39 @@ PUT http://localhost:8080/about/1232421312312323 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Stewart",
-    "lastName": "Rowley",
-    "career": "Web Development",
-    "degree": "Software Engineering",
-    "location": "Walla Walla, Washington",
+  "_id": 1232421312312323,
+  "firstName": "Stewart",
+  "lastName": "Rowley",
+  "career": "Web Development",
+  "degree": "Software Engineering",
+  "location": "Walla Walla, Washington",
+  "introduction": "I was born in Walla Walla, Washington in 1998. The family I grew up in was 9 siblings including me. I had 4 brothers and 4 sisters. I am the third youngest in my famliy. I met my wife in Walla Walla Washington before I left for a 2 year mission for the church of Jesus Christ. I went on a mission for the church of Jesus Christ in Fort Woth, Texas. After my mission I got married to Emily Hepworth. I went to college at BYU-Idaho to get my Bachelors degree in Software Engineering. With an emphasis in the Web development. I have a passion for Web Development and love doing it. ",
+  "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg"
+  "interest": [
+    {
+      "name": "Movies",
+      "description": "These are some of the following favorite movies I like, as follows:",
+      "titles": ["How to Train Your Dragon", "Star Wars: Return of the Jedi", "Shang Chi"]
+    },
+    {
+      "name": "Board Games",
+      "description": "I have found board games to be one of my favorite things to do with others. Here are some of my favorite Board games, as follows: ",
+      "titles": ["Scythe", "Pandemic", "Wingspan"]
+    },
+    {
+      "name": "NHL Hockey",
+      "description": "I love watching NHL hockey and I also love doing fantasy hockey. My most favorite team is the Seattle Kraken but I do love some other teams to. These are the teams as follows:",
+      "titles": [
+        "Buffalo Sabres",
+        "Colorado Avalanches",
+        "Dallas Stars",
+        "Pittsburgh Penguins",
+        "Seattle Kraken",
+        "Toronto Maple Leafs",
+        "Vegas Knights"
+      ]
+    }
+  ]
 }
 
 ###
@@ -265,34 +294,152 @@ Content-Type: application/json
 {
   "_id": 1232421312312323,
   "images_url": [
-    "https://drive.google.com/uc?export=view&id=1hCjKnJNzFxyFiSNWGCuiie_POEvIOC_l",
-    "https://drive.google.com/uc?export=view&id=1EOH4o18C5yD0tJC6myD7gYJ7wKJ0gN9k",
-    "https://drive.google.com/uc?export=view&id=1o81UfBNpCxn1poAvdN5m2nBrcQxzZdvP",
-    "https://drive.google.com/uc?export=view&id=1_zuuRXnqQRUPo9BlxxJzPuiD5aDIW1F6",
-    "https://drive.google.com/uc?export=view&id=1jHFTq2pfKzUJjN3xOxij-AqX_wUUF-FE",
-    "https://drive.google.com/uc?export=view&id=1G90fEgrOGDSbZKwAEv4my_-Hw47U-gJR",
-    "https://drive.google.com/uc?export=view&id=1zpkt01m20gLiHj-VNOXZ0got1a3Oyfv2",
-    "https://drive.google.com/uc?export=view&id=1VVgnRdYRWadArGbYqoOiewY9xPLSvWxK",
-    "https://drive.google.com/uc?export=view&id=1Bvt8tuiCLsnou50IN6Tmf48vc-G8oJBM",
-    "https://drive.google.com/uc?export=view&id=14gpwrzN5wudDptADhCB4tXktlQ-Ov8B7",
-    "https://drive.google.com/uc?export=view&id=12Q10a75cyz1b2gKs9moL5ueMQXcMEVoK",
-    "https://drive.google.com/uc?export=view&id=1_UvV6sXVBaCHmsuKTZBuZFF-wp9hCvs2",
-    "https://drive.google.com/uc?export=view&id=1Sfp7CUMA2RKbe8HWx8n-jfJ2Pdtk799p",
-    "https://drive.google.com/uc?export=view&id=1LJryoeY2bB8pgFzb0TroKfkhm4z7lVvQ",
-    "https://drive.google.com/uc?export=view&id=1kXZzG995DRyxrWdQd8I6_xTTPVfdouFS",
-    "https://drive.google.com/uc?export=view&id=1PxvKSrQY7ih7pfIIZqLJ6vx9025bvlpY",
-    "https://drive.google.com/uc?export=view&id=1kO1AJBJzw1WTgO4jSwnHjdJHVV6vH0Zx",
-    "https://drive.google.com/uc?export=view&id=12vc7QopXE3KzQ2XvCPWZ1YGEPpg3bSTq",
-    "https://drive.google.com/uc?export=view&id=1BB1PCZxj4iayh5yUdMS8YPtw15YlXIUv",
-    "https://drive.google.com/uc?export=view&id=1GfYfFcCyPkGSONafqWH9aMdD5DebHkan",
-    "https://drive.google.com/uc?export=view&id=1PFW6IT680EGjtltTgyn5__v1k4pIWyAe",
-    "https://drive.google.com/uc?export=view&id=1n1kRD-9bCLNAflBKILH5_lVn0fWkYDnh",
-    "https://drive.google.com/uc?export=view&id=1rrw5323voMCgoYAfmXhpKQSAomNlInSW",
-    "https://drive.google.com/uc?export=view&id=1I_Lqj5k0QVmY3po8tgB2DOGB-QS3YJ5o",
-    "https://drive.google.com/uc?export=view&id=1qYXNJqNxyzVtNP4DF47rDYEHmKUcHU_C",
-    "https://drive.google.com/uc?export=view&id=1lMiesACoSwcra948kIvvUICWe4YAJOvb",
-    "https://drive.google.com/uc?export=view&id=13h13UZukLDb4koo3g5tWDBePMuhAJ_Cy",
-    "https://drive.google.com/uc?export=view&id=1QXQoDBVsSgRpR-pgkpHoLl2uKlTCFnyE"
+    {
+      "vertical_images": [
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1896.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1896b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1914.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1914b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1921.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_1933-2.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2032.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2095.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2095b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2103.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2105.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2114.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Emily",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2148.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Emily",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2148b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2206.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2206b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2231.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2317.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_6199.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_6199b.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_6216.jpg"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_6216b.jpg"
+        }
+      ],
+      "horizontal_images": [
+        {
+          "title": "Family",
+          "sub_title": "Stewart, Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2010.png"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2285.png"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Stewart & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2285b.png"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2335.png"
+        },
+        {
+          "title": "Family",
+          "sub_title": "Emily & Abigail",
+          "image_url": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2335b.png"
+        }
+      ]
+    }
   ]
 }
 

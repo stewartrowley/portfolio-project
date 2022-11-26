@@ -4,7 +4,18 @@ module.exports = (mongoose) => {
         mongoose.Schema(
             {
                 _id: Number,
-                images_url: [mongoose.SchemaTypes.Mixed]
+                images_url: [{
+                    vertical_images: [{
+                        title: String,
+                        sub_title: String,
+                        image_url: String
+                    }],
+                    horizontal_images: [{
+                        title: String,
+                        sub_title: String,
+                        image_url: String
+                    }]
+                }]
             },
             { timestamps: true }
         )

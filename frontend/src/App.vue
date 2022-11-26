@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <NavigationBar />
+  <NavigationBar class="nav-bars" />
 </template>
 
 <style lang="scss">
