@@ -1,8 +1,8 @@
 const routes = require('express').Router();
-const gallery = require('../controller/message');
+const message = require('../controller/message');
 
-routes.post('/', gallery.create);
-routes.get('/', gallery.findAll);
-routes.get('/:_id', gallery.findOne);
+routes.post('/', message.create);
+routes.get('/', message.findAll);
+routes.get('/:_id', message.findOne);
 
 module.exports = routes;
