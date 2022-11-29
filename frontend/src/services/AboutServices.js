@@ -1,6 +1,6 @@
 import axios from 'axios';
 const apiClientAbout = axios.create({
-  baseURL: `http://localhost:8080/about`
+  baseURL: `https://portfolio-profile.onrender.com/about`
 });
 
 export default {

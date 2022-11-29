@@ -10,6 +10,6 @@ db.person = require('./person.js')(mongoose);
 db.about = require('./about.js')(mongoose);
 db.employment = require('./employment.js')(mongoose);
 db.gallery = require('./gallery.js')(mongoose)
-
+db.message = require('./message.js')(mongoose);
 
 module.exports = db;

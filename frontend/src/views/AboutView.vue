@@ -2,22 +2,27 @@
   <div class="about">
     <section class="about-profile">
       <img class="profile-image" :src="this.aboutData.profile_image">
+    </section>
+    <section class="about-interest">
       <h1>{{ this.aboutData.firstName + ' ' + this.aboutData.lastName }}</h1>
       <p>From: {{ this.aboutData.location }}</p>
       <p>Degree: {{ this.aboutData.degree }}</p>
       <p>Career: {{ this.aboutData.career }}</p>
       <p>Introduction: {{ this.aboutData.introduction }}</p>
     </section>
-    <section class="about-interest">
-      <div v-for="about in this.aboutData.interest" :key="about">
-        <h2 class="genre">{{ about.name }}</h2>
+  </div>
+  <div class="interest-area" v-for="about in this.aboutData.interest" :key="about">
+    <section>
+        <div class="about-title">
+          <h2 class="genre">{{ about.name }}</h2>
+          <img class="about-icon" :src="about.icon">
+        </div>
         <p>{{ about.description }}</p>
         <ul v-for="title in about.titles" :key="title">
           {{ title }}
         </ul>
+      </section>
       </div>
-    </section>
-  </div>
 </template>
 
 <script>
@@ -54,12 +59,20 @@ export default {
 </script>
 
 <style lang="scss">
+
+.interest-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .profile-image {
   width: 50%;
   height: 60%;
 }
 
 .about {
+  // background-color: var(--);
   display: grid;
   grid-template-columns: 45% 55%;
   align-items: center;
@@ -83,6 +96,18 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+
+.about-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-icon {
+  padding-left: 0.5em;
+  width: 48px;
+  height: 48px;
 }
 
 // @media (min-width: 1024px) {

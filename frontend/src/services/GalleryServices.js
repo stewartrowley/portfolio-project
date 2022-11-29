@@ -1,6 +1,6 @@
 import axios from 'axios';
 const apiClientGallery = axios.create({
-  baseURL: `http://localhost:8080/gallery`
+  baseURL: `https://portfolio-profile.onrender.com/gallery`
 });
 
 export default {

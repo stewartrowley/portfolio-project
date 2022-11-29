@@ -1,6 +1,6 @@
 import axios from 'axios';
 const apiClientEmployment = axios.create({
-  baseURL: `http://localhost:8080/employment`
+  baseURL: `https://portfolio-profile.onrender.com/employment`
 });
 
 export default {
