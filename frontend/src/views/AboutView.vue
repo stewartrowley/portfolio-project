@@ -19,7 +19,7 @@
         </div>
         <p>{{ about.description }}</p>
         <ul v-for="title in about.titles" :key="title">
-          <li><routerLink to="/about/id" @click="displayInterest">{{ title }}</routerLink></li>
+          <li><routerLink to="/about/id" @click="displayInterest(title.name, title.image, title.summary)">{{ title.name }}</routerLink></li>
         </ul>
       </section>
       </div>
@@ -36,8 +36,10 @@ export default {
   },
 
   methods: {
-    displayInterest() {
-      localStorage.setItem('about', JSON.stringify(this.aboutData))
+    displayInterest(name, image, summary) {
+      localStorage.setItem('name', name)
+      localStorage.setItem('image', image)
+      localStorage.setItem('summary', summary)
     },
     layoutTitles(title) {
       const results = title.forEach(element => {

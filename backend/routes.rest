@@ -45,30 +45,91 @@ Content-Type: application/json
       "name": "Movies",
       "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-cinema-64.png",
       "description": "These are some of the following favorite movies I like, as follows:",
-      "titles": ["How to Train Your Dragon", "Star Wars: Return of the Jedi", "Shang Chi"]
+      "titles": [
+        {
+          "name": "How to Train Your Dragon",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/how-to-train-your-dragon.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Star Wars: Return of the Jedi",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/star-wars.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Shang Chi",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/shang-chi.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
     },
     {
       "name": "Board Games",
       "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-board-game-64.png",
       "description": "I have found board games to be one of my favorite things to do with others. Here are some of my favorite Board games, as follows: ",
-      "titles": ["Scythe", "Pandemic", "Wingspan"]
+      "titles": [
+        {
+          "name": "Scythe",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/scythe.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Pandemic",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/pandemic.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Wingspan",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/wingspan.webp",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
     },
     {
       "name": "NHL Hockey",
       "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-hockey-64.png",
       "description": "I love watching NHL hockey and I also love doing fantasy hockey. My most favorite team is the Seattle Kraken but I do love some other teams to. These are the teams as follows:",
       "titles": [
-        "Buffalo Sabres",
-        "Colorado Avalanches",
-        "Dallas Stars",
-        "Pittsburgh Penguins",
-        "Seattle Kraken",
-        "Toronto Maple Leafs",
-        "Vegas Knights"
+        {
+          "name": "Buffalo Sabres",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/buffalo-sabres.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Colorado Avalanches",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/colorado-avalanches.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Dallas Stars",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/dallas-stars.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Pittsburgh Penguins",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/pittsburgh-penguins.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Seattle Kraken",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/seattle-kraken.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Toronto Maple Leafs",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/toronto-maple-leafs.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Vegas Knights",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/vegas-knights.jpg",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
       ]
     }
   ]
 }
+
 
 ###
 
@@ -83,29 +144,92 @@ Content-Type: application/json
   "degree": "Software Engineering",
   "location": "Walla Walla, Washington",
   "introduction": "I was born in Walla Walla, Washington in 1998. The family I grew up in was 9 siblings including me. I had 4 brothers and 4 sisters. I am the third youngest in my famliy. I met my wife in Walla Walla Washington before I left for a 2 year mission for the church of Jesus Christ. I went on a mission for the church of Jesus Christ in Fort Woth, Texas. After my mission I got married to Emily Hepworth. I went to college at BYU-Idaho to get my Bachelors degree in Software Engineering. With an emphasis in the Web development. I have a passion for Web Development and love doing it. ",
-  "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg"
+  "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg",
   "interest": [
     {
       "name": "Movies",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-cinema-64.png",
       "description": "These are some of the following favorite movies I like, as follows:",
-      "titles": [{"How to Train Your Dragon"}, "Star Wars: Return of the Jedi", "Shang Chi"]
+      "titles": [
+        {
+          "name": "How to Train Your Dragon",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/how-to-train-your-dragon.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Star Wars: Return of the Jedi",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/star-wars.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Shang Chi",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/shang-chi.jpg",
+          "summary": ""
+        }
+      ]
     },
     {
       "name": "Board Games",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-board-game-64.png",
       "description": "I have found board games to be one of my favorite things to do with others. Here are some of my favorite Board games, as follows: ",
-      "titles": ["Scythe", "Pandemic", "Wingspan"]
+      "titles": [
+        {
+          "name": "Scythe",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/scythe.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Pandemic",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/pandemic.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Wingspan",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/wingspan.webp",
+          "summary": ""
+        }
+      ]
     },
     {
       "name": "NHL Hockey",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-hockey-64.png",
       "description": "I love watching NHL hockey and I also love doing fantasy hockey. My most favorite team is the Seattle Kraken but I do love some other teams to. These are the teams as follows:",
       "titles": [
-        "Buffalo Sabres",
-        "Colorado Avalanches",
-        "Dallas Stars",
-        "Pittsburgh Penguins",
-        "Seattle Kraken",
-        "Toronto Maple Leafs",
-        "Vegas Knights"
+        {
+          "name": "Buffalo Sabres",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/buffalo-sabres.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Colorado Avalanches",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/colorado-avalanches.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Dallas Stars",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/dallas-stars.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Pittsburgh Penguins",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/pittsburgh-penguins.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Seattle Kraken",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/seattle-kraken.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Toronto Maple Leafs",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/toronto-maple-leafs.jpg",
+          "summary": ""
+        },
+        {
+          "name": "Vegas Knights",
+          "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/vegas-knights.jpg",
+          "summary": ""
+        }
       ]
     }
   ]
