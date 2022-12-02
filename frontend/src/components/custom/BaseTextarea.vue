@@ -1,7 +1,7 @@
 <template lang="">
     <div id="base-textarea">
     <label v-if="label">{{label}}</label>
-    <textarea name="messgae" id="" cols="30" rows="10"></textarea>
+    <textarea v-bind="$attrs" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" name="message" id="" cols="30" rows="10"></textarea>
     </div>
 </template>
 <script>
@@ -10,6 +10,10 @@ export default {
         label: {
             type: String,
             required: true,
+        },
+        modelValue: {
+            type: String,
+            default: ''
         }
     }
     

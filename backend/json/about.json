@@ -6,27 +6,68 @@
   "degree": "Software Engineering",
   "location": "Walla Walla, Washington",
   "introduction": "I was born in Walla Walla, Washington in 1998. The family I grew up in was 9 siblings including me. I had 4 brothers and 4 sisters. I am the third youngest in my famliy. I met my wife in Walla Walla Washington before I left for a 2 year mission for the church of Jesus Christ. I went on a mission for the church of Jesus Christ in Fort Woth, Texas. After my mission I got married to Emily Hepworth. I went to college at BYU-Idaho to get my Bachelors degree in Software Engineering. With an emphasis in the Web development. I have a passion for Web Development and love doing it. ",
+  "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg",
   "interest": [
     {
       "name": "Movies",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-cinema-64.png",
       "description": "These are some of the following favorite movies I like, as follows:",
-      "titles": ["How to Train Your Dragon", "Star Wars: Return of the Jedi", "Shang Chi"]
+      "titles": [
+        { "name": "How to Train Your Dragon", "image": "", "summary": "" },
+        { "name": "Star Wars: Return of the Jedi", "image": "", "summary": "" },
+        { "name": "Shang Chi", "image": "", "summary": "" }
+      ]
     },
     {
       "name": "Board Games",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-board-game-64.png",
       "description": "I have found board games to be one of my favorite things to do with others. Here are some of my favorite Board games, as follows: ",
-      "titles": ["Scythe", "Pandemic", "Wingspan"]
+      "titles": [
+        { "name": "Scythe", "image": "", "summary": "" },
+        { "name": "Pandemic", "image": "", "summary": "" },
+        { "name": "Wingspan", "image": "", "summary": "" }
+      ]
     },
     {
       "name": "NHL Hockey",
+      "icon": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Icons/icons8-hockey-64.png",
       "description": "I love watching NHL hockey and I also love doing fantasy hockey. My most favorite team is the Seattle Kraken but I do love some other teams to. These are the teams as follows:",
       "titles": [
-        "Buffalo Sabres",
-        "Colorado Avalanches",
-        "Dallas Stars",
-        "Seattle Kraken",
-        "Toronto Maple Leafs",
-        "Vegas Knights"
+        {
+          "name": "Buffalo Sabres",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Colorado Avalanches",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Dallas Stars",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Pittsburgh Penguins",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Seattle Kraken",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Toronto Maple Leafs",
+          "image": "",
+          "summary": ""
+        },
+        {
+          "name": "Vegas Knights",
+          "image": "",
+          "summary": ""
+        }
       ]
     }
   ]

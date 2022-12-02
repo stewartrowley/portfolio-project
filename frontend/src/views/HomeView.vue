@@ -28,6 +28,7 @@ export default {
   created() {
     PersonServices.getPerson()
       .then((response) => {
+        console.log(response)
         this.personData = response.data;
       })
       .catch((error) => {

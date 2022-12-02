@@ -1,7 +1,7 @@
 <template lang="">
     <div id="base-text">
         <label v-if="label">{{label}}</label>
-        <input type={{type}} />
+        <input type={{type}} v-bind="$attrs" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
     </div>
 </template>
 <script>
@@ -15,6 +15,10 @@ export default {
         label: {
             type: String,
             required: true,
+        },
+        modelValue: {
+            type: String,
+            default: ''
         }
     }
     
