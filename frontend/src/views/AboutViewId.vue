@@ -32,16 +32,15 @@ export default {
 }
 
 .interest-content {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-column: 1/2;
+  padding: 0 5rem;
 }
 
 .interest-img {
-  background-color: red;
   grid-column: 2/3;
 }
 

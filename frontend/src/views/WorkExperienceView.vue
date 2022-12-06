@@ -1,15 +1,25 @@
 <template lang="">
-    <section>
+    <div class="employment-wrapper">
+    <div class="header-info-personal">
+        <h1>{{this.employmentData.first_name}} {{this.employmentData.middle_intial}}. {{this.employmentData.last_name}}</h1>
+        <p>{{this.employmentData.phone_number}} | {{this.employmentData.email}} | <span>      <a :href="'https://' + this.employmentData.linkedin_url">{{this.employmentData.linkedin_url}}</a></span></p>
+    </div>
+    <section class="education-exp">
+        <hr>
         <h2>Education</h2>
         <div v-for="educated in this.employmentData.education" :key="educated">
             <h3>{{educated.college}}</h3>
             <p>{{educated.degree_type}} in {{educated.degree}} with emphasis of {{educated.emphasis}}</p>
             <p>From: {{educated.start_date}} to {{educated.end_date}}</p>
             <p>Located in {{educated.location}}</p>
-            <p v-for="tool in educated.tools" :key="tool">{{tool}}</p>
+            <h3>Tools Used:</h3>
+            <div v-for="tool in educated.tools" :key="tool" class="employement-tools">
+                <p>{{tool}},</p>
+            </div>
         </div>
     </section>
-    <section>
+    <section class="professional-exp">
+        <hr>
         <h2>Professional Experience</h2>
         <div v-for="element in this.employmentData.professional_experience" :key="element">
             <h3>{{element.company}}</h3>
@@ -24,7 +34,8 @@
             <p>Located: {{element.location}}</p>
         </div>
     </section>
-    <section>
+    <section class="work-exp">
+        <hr>
         <h2>Work Experience</h2>
         <div v-for="element in this.employmentData.work_experience" :key="element" >
             <h3>{{element.company}}</h3>
@@ -39,7 +50,8 @@
             <p>Located: {{element.location}}</p>
         </div>
     </section>
-    <section>
+    <section class="personal-exp">
+        <hr>
         <h2>Personal Experience</h2>
         <div v-for="element in this.employmentData.personal_experience" :key="element" >
             <h3>{{element.name}}</h3>
@@ -51,7 +63,8 @@
             <p>Located: {{element.location}}</p>
         </div>
     </section>
-    <section>
+    <section class="skills-exp">
+        <hr>
         <h2>Skills</h2>
         <div v-for="element in this.employmentData.skills" :key="element">
             <h3>{{element.skill_category}}</h3>
@@ -60,6 +73,7 @@
             </ul>
         </div>
     </section>
+    </div>
 </template>
 <script>
 import EmploymentServices from '../services/EmploymentServices';
@@ -81,6 +95,35 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+.employment-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: #1b2f33;
+    font-size: 1em;
+}
+
+.education-exp, .professional-exp, .work-exp, .personal-exp, .skills-exp, .header-info-personal {
+    grid-column: 2/3;
+    background-color: var(--timberwolf);
+    color: var(--space-cadet);
+    padding: 0 5rem;
+}
+
+.header-info-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+hr {
+    height: 5px;
+    background-color: var(--space-cadet);
+    color: var(--space-cadet);
+}
+
+.employement-tools {
+    display: flex;
+    flex-direction: row;
+}
 </style>

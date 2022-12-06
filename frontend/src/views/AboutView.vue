@@ -12,17 +12,20 @@
     </section>
   </div>
   <div class="interest-area" v-for="about in this.aboutData.interest" :key="about">
-    <section>
-        <div class="about-title">
-          <h2 class="genre">{{ about.name }}</h2>
-          <img class="about-icon" :src="about.icon">
-        </div>
-        <p>{{ about.description }}</p>
-        <ul v-for="title in about.titles" :key="title">
-          <li><routerLink to="/about/id" @click="displayInterest(title.name, title.image, title.summary)">{{ title.name }}</routerLink></li>
-        </ul>
-      </section>
+    <section class="interest-section">
+      <div class="about-title">
+        <h2 class="genre">{{ about.name }}</h2>
+        <img class="about-icon" :src="about.icon">
       </div>
+      <p>{{ about.description }}</p>
+      <ul v-for="title in about.titles" :key="title">
+        <li>
+          <routerLink to="/about/id" @click="displayInterest(title.name, title.image, title.summary)">{{ title.name }}
+          </routerLink>
+        </li>
+      </ul>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -64,11 +67,15 @@ export default {
 </script>
 
 <style lang="scss">
-
 .interest-area {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.interest-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 5rem;
 }
 
 .profile-image {
