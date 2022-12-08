@@ -1,5 +1,5 @@
 <template lang="">
-    <button type={{type}}>{{label}}</button>
+    <button class="submitBtn" type={{type}}>{{label}}</button>
 </template>
 <script>
 export default {
@@ -16,6 +16,14 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+    .submitBtn {
+        background-color: var(--polished-pine);
+        color: var(--space-cadet);
+        font-size: 1.1em;
+        padding: 0.75rem;
+        cursor: pointer;
+        width: 30%;
+        border: none;
+    }
 </style>

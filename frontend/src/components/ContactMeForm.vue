@@ -1,8 +1,8 @@
 <template lang="">
   <div class="form-input">
     <form class="contact-form" @submit.prevent="submit">
-      <h1>Contact Me</h1>
       <fieldset class="contact-form-fieldset">
+        <h1 class="form-title">Get in touch</h1>
         <div class="form-fullname">
           <BaseText type="text" label="Firstname:" v-model="form.firstName" />
           <BaseText type="text" label="Lastname:" v-model="form.lastName" />
@@ -11,8 +11,12 @@
           <BaseText type="email" label="Email:" v-model="form.email" />
           <BaseText type="phone" label="Phone Number:" v-model="form.phoneNumber" />
         </div>
-        <BaseTextarea label="Message:" v-model="form.message" />
+        <div class="form-contact-message">
+          <BaseTextarea label="Message:" v-model="form.message" />
+        </div>
+        <div class="submit-content">
         <BaseButton type="submit" label="Contact Me" />
+        </div>
       </fieldset>
     </form>
     <div class="contact-info">
@@ -88,6 +92,12 @@ export default {
 };
 </script>
 <style lang="scss">
+
+.form-title {
+  text-align: center;
+  color: white;
+}
+
 .contact-form-fieldset {
   border-radius: 5px;
   display: flex;
@@ -100,7 +110,21 @@ export default {
 .form-fullname,
 .form-contact-info {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form-fullname {
+  padding-top: 2rem;
+}
+
+.form-contact-info {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-contact-message {
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-form {
@@ -108,17 +132,51 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding-top: 4rem;
 }
 
+.submit-content {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+
+label {
+  color: var(--timberwolf);
+  font-size: 1em;
+}
+
 input {
-  background-color: var(--timberwolf);
+  color: white;
+  background-color: var(--black-coffee);
   border: none;
+  border-bottom: 5px solid var(--timberwolf);
+  caret-color: white;
+  font-size: 1em;
   padding: 0.9rem 0.9rem;
   margin: 0.5rem 0;
   width: 100%;
+  &:focus {
+    outline: none;
+  }
 }
+
+textarea {
+  color: white;
+  background-color: var(--black-coffee);
+  border: none;
+  border-bottom: 5px solid white;
+  padding: 0.9rem 0.9rem;
+  caret-color: white;
+  font-size: 1em;
+  width: auto;
+  &:focus {
+    outline: none;
+  }
+}
+
 
 .contact-info {
   background-color: var(--timberwolf);
