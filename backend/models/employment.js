@@ -10,6 +10,7 @@ module.exports = (mongoose) => {
                 phone_number: String,
                 email: String,
                 linkedin_url: String,
+                resume: String,
                 education: [mongoose.SchemaTypes.Mixed],
                 professional_experience: [mongoose.SchemaTypes.Mixed],
                 work_experience: [mongoose.SchemaTypes.Mixed],

@@ -1,5 +1,8 @@
 <template lang="">
-  <div class="gallery-background">
+  <div v-if="!galleryData">
+    <BaseLoader />
+  </div>
+  <div class="gallery-background" v-if="galleryData">
     <h1 class="gallery-title">Gallery</h1>
     <GalleryMaker/>
   </div>
@@ -7,6 +10,7 @@
 <script>
 import GalleryServices from '../services/GalleryServices';
 import GalleryMaker from '../components/GalleryMaker.vue';
+import BaseLoader from '../components/custom/BaseLoader.vue';
 import { useImageStore } from '../stores/ImageStore'
 import { convertToListVertical, convertToListHorizontal } from '../functions/functions.js'
 export default {
@@ -30,7 +34,8 @@ export default {
       });
   },
   components: {
-    GalleryMaker
+    GalleryMaker,
+    BaseLoader
   },
   setup() {
     const imageStore = useImageStore();
@@ -41,14 +46,16 @@ export default {
 };
 </script>
 <style lang="scss">
-  .gallery-background {
-    background-color: var(--black-coffee);
-  }
-  .gallery-title {
-    margin-top: 0;
-    padding-top: 1em;
-    text-align: center;
-    color: var(--timberwolf);
-  }
+.gallery-background {
+  background-color: var(--black-coffee);
+}
+
+.gallery-title {
+  margin-top: 0;
+  padding-top: 1em;
+  text-align: center;
+  color: var(--timberwolf);
+}
+
 
 </style>

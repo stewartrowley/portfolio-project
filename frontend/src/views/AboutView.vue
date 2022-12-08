@@ -1,5 +1,8 @@
 <template>
-  <div class="about">
+  <div v-if="!aboutData">
+    <BaseLoader />
+  </div>
+  <div v-if="aboutData" class="about">
     <section class="about-profile">
       <img class="profile-image" :src="this.aboutData.profile_image">
     </section>
@@ -30,6 +33,7 @@
 
 <script>
 import AboutServices from '../services/AboutServices';
+import BaseLoader from '../components/custom/BaseLoader.vue';
 
 export default {
   data() {
@@ -61,6 +65,9 @@ export default {
       .catch((error) => {
         console.log(error);
       });
+  },
+  components: {
+    BaseLoader
   }
 }
 
@@ -70,6 +77,7 @@ export default {
 .interest-area {
   display: grid;
   grid-template-columns: 1fr;
+  border-top: 1px solid black;
 }
 
 .interest-section {

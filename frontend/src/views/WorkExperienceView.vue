@@ -1,8 +1,11 @@
 <template lang="">
-    <div class="employment-wrapper">
+    <div v-if="!employmentData">
+        <BaseLoader />
+    </div>
+    <div v-if="employmentData" class="employment-wrapper">
     <div class="header-info-personal">
         <h1>{{this.employmentData.first_name}} {{this.employmentData.middle_intial}}. {{this.employmentData.last_name}}</h1>
-        <p>{{this.employmentData.phone_number}} | {{this.employmentData.email}} | <span>      <a :href="'https://' + this.employmentData.linkedin_url">{{this.employmentData.linkedin_url}}</a></span></p>
+        <p>{{this.employmentData.phone_number}} | {{this.employmentData.email}} | <span><a :href="'https://' + this.employmentData.linkedin_url">{{this.employmentData.linkedin_url}}</a></span></p>
     </div>
     <section class="education-exp">
         <hr>
@@ -14,7 +17,7 @@
             <p>Located in {{educated.location}}</p>
             <h3>Tools Used:</h3>
             <div v-for="tool in educated.tools" :key="tool" class="employement-tools">
-                <p>{{tool}},</p>
+                <li>{{tool}}</li>
             </div>
         </div>
     </section>
@@ -72,11 +75,13 @@
                 <li>{{element}}</li>
             </ul>
         </div>
+        <a :href="this.employmentData.resume">Software Engineering Resume</a>
     </section>
     </div>
 </template>
 <script>
 import EmploymentServices from '../services/EmploymentServices';
+import BaseLoader from '../components/custom/BaseLoader.vue';
 export default {
     data() {
         return {
@@ -92,6 +97,9 @@ export default {
             .catch((error) => {
                 console.log(error);
             });
+    },
+    components: {
+        BaseLoader
     }
 }
 </script>
@@ -99,7 +107,7 @@ export default {
 .employment-wrapper {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    background-color: #1b2f33;
+    background-color: var(--dark-cyan);
     font-size: 1em;
 }
 

@@ -5,7 +5,7 @@
   "career": "Web Development",
   "degree": "Software Engineering",
   "location": "Walla Walla, Washington",
-  "introduction": "I was born in Walla Walla, Washington in 1998. The family I grew up in was 9 siblings including me. I had 4 brothers and 4 sisters. I am the third youngest in my famliy. I met my wife in Walla Walla Washington before I left for a 2 year mission for the church of Jesus Christ. I went on a mission for the church of Jesus Christ in Fort Woth, Texas. After my mission I got married to Emily Hepworth. I went to college at BYU-Idaho to get my Bachelors degree in Software Engineering. With an emphasis in the Web development. I have a passion for Web Development and love doing it. ",
+  "introduction": "I was born in Walla Walla, Washington in 1998. I grew up in a family of nine siblings, including myself. I have four brothers and four sisters and am the third youngest in my family. I met my wife in Walla Walla, Washington when she moved in, right before I left for a two-year mission for The Church of Jesus Christ. After high school I went on a mission to Fort Worth, Texas serving and teaching the people there. When I got home from serving, I got married to my wife Emily after dating for a few months. I went to college at BYU-Idaho to get my bachelor’s degree in Software Engineering with an emphasis in web development. I tried out a few other majors but found that I have a passion for Web Development. I love doing it and creating something out of code like a puzzle, to see the bigger picture when it all comes together. I love how web development allows me to always be learning new skills to become even better at what I enjoy doing for myself and for others.",
   "profile_image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Gallery/IMG_2172.jpg",
   "interest": [
     {
@@ -16,7 +16,7 @@
         {
           "name": "How to Train Your Dragon",
           "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/how-to-train-your-dragon.jpg",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "summary": "I first fell in love with this movie because I like fantasy and I always thought dragons, and especially the idea of riding and flying with them, sounded cool. I grew to like the movie more with each new one that came out. I saw the characters develop and remind me of my own relationships and life journey. I think it has a great message of courage, leadership, and compassion. This movie was made in 2010 and was based on a book about Hiccup who is an awkward guy who trains to fight dragons but ends up befriending one and learns how to ride him. Together they convince the whole village that dragons are not their enemies, but rather, they can be the best of friends."
         },
         {
           "name": "Star Wars: Return of the Jedi",
@@ -38,7 +38,7 @@
         {
           "name": "Scythe",
           "image": "https://raw.githubusercontent.com/stewartrowley/portfolio-project/main/frontend/src/images/Interest/scythe.jpg",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "summary": "This was a game I was first introduced to by my brothers. We love to play games together especially strategic games that involve conquering or competition. I have now learned the game well and have taught my wife how to play. We have played together a few times now, but it is a longer game that requires a lot of thought, so we haven’t really played it since having a baby. In Scythe, each player represents a leader attempting to restore their honor and lead their faction to power. Players conquer territory, enlist new recruits, reap resources, gain villagers, build structures, and activate powerful mechs. I love that there are many ways to win and how it plays out differently each time. "
         },
         {
           "name": "Pandemic",

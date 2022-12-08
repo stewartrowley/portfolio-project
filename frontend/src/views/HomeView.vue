@@ -1,5 +1,8 @@
 <template lang="">
-  <div class="firework-background">
+  <div v-if="!personData">
+    <BaseLoader />
+  </div>
+  <div v-if="personData" class="firework-background">
     <SnowBackground />
     <div class="content">
       <div class="me-box">
@@ -15,6 +18,7 @@
 import PersonServices from '../services/PersonServices';
 import SnowBackground from '../components/SnowBackground.vue';
 import HomeNavigationBar from '../components/HomeNavigationBar.vue';
+import BaseLoader from '../components/custom/BaseLoader.vue'
 export default {
   data() {
     return {
@@ -23,7 +27,8 @@ export default {
   },
   components: {
     SnowBackground,
-    HomeNavigationBar
+    HomeNavigationBar,
+    BaseLoader
   },
   created() {
     PersonServices.getPerson()

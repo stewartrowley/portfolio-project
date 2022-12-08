@@ -256,6 +256,7 @@ Content-Type: application/json
     "phone_number": "509-301-0726",
     "email": "row16006@byui.edu",
     "linkedin_url": "www.linkedin.com/in/stewartmrowley",
+    "resume": "https://drive.google.com/file/d/1xdnKUj9ZjUIMlBUI3C_fp7QAl1EJPLKY/view?usp=sharing",
     "education": [{
         "college": "Brigham Young University - Idaho",
         "degree_type": "Bachelor's Degree",

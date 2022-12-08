@@ -28,6 +28,7 @@
     "tsparticles-preset-fireworks": "^2.3.4",
     "tsparticles-preset-snow": "^2.3.3",
     "vue": "^3.2.41",
+    "vue-html2pdf": "^1.8.0",
     "vue-router": "^4.1.5",
     "vue3-particles": "^2.3.3",
     "vue3-picture-swipe": "^3.0.6"
