@@ -93,9 +93,30 @@ export default {
 </script>
 <style lang="scss">
 
+
+.form-input {
+	background: linear-gradient(-45deg, #96D8D8, #639FB6, #61988e, #507c74);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	// height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .form-title {
   text-align: center;
-  color: white;
+  color: var(--timberwolf);
 }
 
 .contact-form-fieldset {
@@ -149,11 +170,11 @@ label {
 }
 
 input {
-  color: white;
-  background-color: var(--black-coffee);
+  color: var(--space-cadet);
+  background-color: white;
   border: none;
-  border-bottom: 5px solid var(--timberwolf);
-  caret-color: white;
+  border-bottom: 5px solid var(--polished-pine);
+  caret-color: (--space-cadet);
   font-size: 1em;
   padding: 0.9rem 0.9rem;
   margin: 0.5rem 0;
@@ -164,12 +185,12 @@ input {
 }
 
 textarea {
-  color: white;
-  background-color: var(--black-coffee);
+  color: var(--space-cadet);
+  background-color: white;
   border: none;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid var(--polished-pine);
   padding: 0.9rem 0.9rem;
-  caret-color: white;
+  caret-color: var(--space-cadet);
   font-size: 1em;
   width: auto;
   &:focus {

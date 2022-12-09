@@ -1,5 +1,4 @@
 const dotenv = require('dotenv');
-mongoose.set('strictQuery', true);
 dotenv.config()
 
 module.exports = {

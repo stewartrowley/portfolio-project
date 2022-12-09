@@ -18,8 +18,9 @@ export default {
 </script>
 <style lang="scss">
     .submitBtn {
-        background-color: var(--polished-pine);
-        color: var(--space-cadet);
+        border-radius: 5px;
+        background-color: #507c74;
+        color: white;
         font-size: 1.1em;
         padding: 0.75rem;
         cursor: pointer;
