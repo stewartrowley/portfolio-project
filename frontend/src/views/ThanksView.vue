@@ -1,6 +1,6 @@
 <template>
-    <div class="about">
-        <h1>Thank you for your message!</h1>
+    <div class="about-thanks">
+        <h2>Thanks for the message! I will get in touch with you soon!</h2>
     </div>
   </template>
   
@@ -23,15 +23,14 @@
     width: 50%;
     height: 60%;
   }
-  
-  .about {
-    // background-color: var(--);
-    display: grid;
-    grid-template-columns: 45% 55%;
+
+  .about-thanks {
+    display: flex;
     align-items: center;
     justify-content: center;
     color: var(--space-cadet);
   }
+  
   
   .about-interest {
     grid-column: 2/3;

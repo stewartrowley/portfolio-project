@@ -2,8 +2,8 @@
   <section class="interest-box">
     <div class="interest-content">
         <h1>{{this.name}}</h1>
-        <p>{{this.summary}}</p>
-        <routerLink to="/about"><h2 class="x">Back to About</h2></routerLink>
+        <p class="about-interest-summary">{{this.summary}}</p>
+        <routerLink class="back-to-about" to="/about"><h2>Back to About</h2></routerLink>
       </div>
       <div class="interest-img">
         <img :src="this.image">
@@ -23,6 +23,14 @@ export default {
 </script>
 <style lang="scss">
 
+.about-interest-summary {
+  text-indent: 2em;
+}
+
+.back-to-about {
+  color: var(--space-cadet);
+  text-decoration: underline;
+}
 
 .interest-box {
   display: grid;
