@@ -29,6 +29,8 @@
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
+    justify-content: center;
+    color: var(--space-cadet);
   }
   
   .about-interest {

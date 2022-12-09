@@ -4,8 +4,8 @@
       <fieldset class="contact-form-fieldset">
         <h1 class="form-title">Get in touch</h1>
         <div class="form-fullname">
-          <BaseText type="text" label="Firstname:" v-model="form.firstName" />
-          <BaseText type="text" label="Lastname:" v-model="form.lastName" />
+          <BaseText type="text" label="First Name:" v-model="form.firstName" />
+          <BaseText type="text" label="Last Name:" v-model="form.lastName" />
         </div>
         <div class="form-contact-info">
           <BaseText type="email" label="Email:" v-model="form.email" />
@@ -178,7 +178,7 @@ input {
   font-size: 1em;
   padding: 0.9rem 0.9rem;
   margin: 0.5rem 0;
-  width: 100%;
+  width: 20rem;
   &:focus {
     outline: none;
   }
@@ -192,7 +192,7 @@ textarea {
   padding: 0.9rem 0.9rem;
   caret-color: var(--space-cadet);
   font-size: 1em;
-  width: auto;
+  width: 25rem;
   &:focus {
     outline: none;
   }

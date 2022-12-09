@@ -75,7 +75,9 @@
                 <li>{{element}}</li>
             </ul>
         </div>
-        <a :href="this.employmentData.resume">Software Engineering Resume</a>
+        <div class="resume-loader">
+            <a :href="this.employmentData.resume" class="resume-button">Download Software Engineering Resume</a>
+        </div>
     </section>
     </div>
 </template>
@@ -133,5 +135,19 @@ hr {
 .employement-tools {
     display: flex;
     flex-direction: row;
+}
+
+.resume-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+}
+
+.resume-button {
+    background-color: var(--dark-cyan);
+    color: var(--timberwolf);
+    text-decoration: none;
+    padding: 0.75rem;
 }
 </style>

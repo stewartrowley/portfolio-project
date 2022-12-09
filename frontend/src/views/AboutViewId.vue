@@ -23,6 +23,7 @@ export default {
 </script>
 <style lang="scss">
 
+
 .interest-box {
   display: grid;
   grid-template-columns: 2fr 1fr;
