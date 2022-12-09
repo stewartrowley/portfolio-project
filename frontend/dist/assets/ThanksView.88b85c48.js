@@ -1,1 +1,0 @@
-import{_ as e,o as s,c as o,e as t}from"./index.7e18aed2.js";const _={},n={class:"about"},a=t("h1",null,"Thank you for your message!",-1),c=[a];function r(i,d,u,l,p,h){return s(),o("div",n,c)}const k=e(_,[["render",r]]);export{k as default};

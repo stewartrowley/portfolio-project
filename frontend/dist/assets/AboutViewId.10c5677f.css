@@ -1,1 +1,0 @@
-.interest-box{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:35rem;overflow:hidden}.interest-content{display:flex;flex-direction:column;justify-content:center;align-items:center;grid-column:1/2;padding:0 5rem}.interest-img{grid-column:2/3}img{height:100%;width:100%;object-fit:fill}
